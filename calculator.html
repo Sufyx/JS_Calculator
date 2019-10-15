@@ -1,0 +1,81 @@
+<!--
+* @author: Asaf Gilboa
+* @project: Multi parameters calculator
+* SV-College Front-End course
+* 29/06/2019
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="calculatorStyle.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="mainDiv">
+        <div class="container">
+            <div class="row">
+                <div id="panelDiv">
+                    <p id="panelExp" ></p>
+                    <p id="panelRes" ></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button onclick="getClick(7)" type="button" class="calcBtn btn btn-secondary">7</button>
+                    <button onclick="getClick(8)" type="button" class="calcBtn btn btn-secondary">8</button>
+                    <button onclick="getClick(9)" type="button" class="calcBtn btn btn-secondary">9</button>
+                    <button onclick="getOp('+')" type="button" class="calcBtn opBtn btn btn-secondary">+</button>
+                    <button id='opBrack' onclick="openBracket()" value="0" type="button" class="calcBtn opBtn btn btn-secondary">(</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button onclick="getClick(4)" type="button" class="calcBtn btn btn-secondary">4</button>
+                    <button onclick="getClick(5)" type="button" class="calcBtn btn btn-secondary">5</button>
+                    <button onclick="getClick(6)" type="button" class="calcBtn btn btn-secondary">6</button>
+                    <button onclick="getOp('-')" type="button" class="calcBtn opBtn btn btn-secondary">−</button>
+                    <button onclick="closeBracket()" type="button" class="calcBtn opBtn btn btn-secondary">)</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button onclick="getClick(1)" type="button" class="calcBtn btn btn-secondary">1</button>
+                    <button onclick="getClick(2)" type="button" class="calcBtn btn btn-secondary">2</button>
+                    <button onclick="getClick(3)" type="button" class="calcBtn btn btn-secondary">3</button>
+                    <button onclick="getOp('×')" type="button" class="calcBtn opBtn btn btn-secondary">×</button>
+                    <button onclick="negativeNum()" type="button" class="calcBtn opBtn btn btn-secondary">-x</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button onclick="getZero()" type="button" class="calcBtn btn btn-secondary">0</button>
+                    <button onclick="reset()" type="button" class="calcBtn btn btn-secondary">C</button>
+                    <button onclick="calculate()" type="button" class="calcBtn btn btn-secondary">=</button>
+                    <button onclick="getOp('÷')" type="button" class="calcBtn opBtn btn btn-secondary">÷</button>
+                    <button onclick="deleteLast()" type="button" class="calcBtn opBtn btn btn-secondary">del</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="calculatorScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+/*
+* @author: Asaf Gilboa
+* @project: Multi parameters calculator
+* SV-College Front-End course
+* 29/06/2019
+*/
+
+#mainDiv {
+    background-color: #BBB;
+    display: inline-block;
+    position: absolute;
+    left: 30%;
+    top: 15%;
+    padding: 5px;
+    border: 3px solid #4f4f4f;
+    border-radius: 5px;
+}
+
+.calcBtn {
+    width: 80px;
+    height: 40px;
+    font-size: 25px;
+    background-color: lightslategray;
+    color: darkslategray;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0.4px -0.4px ghostwhite;
+    border-radius: 8px;
+}
+.calcBtn:hover {
+    background-color: #46689b;
+}
+.calcBtn:active {
+    background-color: #688abd;
+    transform: translateY(1px);
+}
+
+#panelDiv {
+    width: 412px;
+    height: 44px;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    background-color: rgba(173, 214, 214, 0.5);
+    color: black;
+    border: 2px solid #696969;
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#panelExp {
+    line-height: -30px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    color: #003c00;
+}
+
+#panelRes {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    margin: 0px;
+    margin-right: 10px;
+    padding: 0px;
+    text-shadow: -0.5px 0.5px #008f11;
+}

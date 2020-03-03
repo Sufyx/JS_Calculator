@@ -1,3 +1,3 @@
 # JS_Calculator
 
-[demo]!(demo.gif)
+![demo](demo.gif)
